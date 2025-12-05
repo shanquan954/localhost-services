@@ -1,2 +1,21 @@
-data
-backups
+# Ignore everything by default
+*
+
+# Keep these repository files
+!.gitignore
+!/README.md
+
+# Allow directory entries so we can un-ignore directories below
+!*/
+
+# Un-ignore the top-level folders we want to preserve
+!/data/
+!/backups/
+
+# Ignore all files under these folders (we keep only .gitkeep files)
+/data/**
+/backups/**
+
+# Except allow .gitkeep to preserve directory structure
+!/data/**/.gitkeep
+!/backups/**/.gitkeep
