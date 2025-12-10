@@ -4,6 +4,7 @@
 # Keep these repository files
 !.gitignore
 !/README.md
+!/env.example
 
 # Allow directory entries so we can un-ignore directories below
 !*/
